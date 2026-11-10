@@ -10,8 +10,9 @@ git clone https://github.com/nickswetlin/cse227-final-project.git
 cd cse-227-final-project
 ```
 
-Run the docker container (change "your-key-here" to your GoogleGeminiAPI key): 
+Build the docker container. Run the docker container (change "your-key-here" to your GoogleGeminiAPI key): 
 ```
+docker build -t gemini-env .
 docker run -it --rm \
   -e GEMINI_API_KEY="your-key-here" \
   -v "$PWD":/work \
