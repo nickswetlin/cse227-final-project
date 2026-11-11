@@ -17,10 +17,10 @@ docker run -it --rm \
   -e GEMINI_API_KEY="your-key-here" \
   -v "$PWD":/work \
   -v ~/.gitconfig:/root/.gitconfig:ro \
-  gemini-env gemini
+  gemini-env bash
 ```
 
-In your docker container, install REA by asking Google Gemini this prompt:
+In your docker container, enter Gemini by typing `gemini`. After setting up authorization, install REA by asking Google Gemini this prompt:
 ```
 Install REA and connect it to this coding agent using npx rea-agents@latest setup. Show me the setup plan for approval, then verify the installation.
 ```
